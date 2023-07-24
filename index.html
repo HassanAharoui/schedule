@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schedule</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./table.css">
+    </head>
+    <body>
+        <!-- pop up  -->
+        <div id="pop-up-container" class="pop-up-container">
+
+            <div class="pop-up-close-btn" id="pop-up-close-btn">X</div>
+            <div class="pop-up-second-container">
+                <div class="pop-up-label-container">
+                    <label for="pop-up-label">Activity</label>
+                </div>
+                <div class="pop-up-input-container">
+                    <input type="text" class="pop-up-input"/>
+                </div>
+                <div class="pop-up-register-btn">
+                    <button class="pop-up-btn" id="pop-up-btn">Register</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <nav class="navbar-container">
+                <div class="logo">
+                    <span>LOGO</span>
+                </div>
+                <div class="list-items-nav">
+                    <ul class="list-items">
+                        <li><a href="./">Month</a></li>
+                        <li><a href="/week.html">Week</a></li>
+                        <li>item3</li>
+                        <li>item4</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="main-container">
+            <main>
+                <div class="month-section-text">
+                    <h1>Month Section</h1>
+                    <input type="date" name="" id="date-selector">
+                    <button type="button" id="select-date-btn">Select</button>
+                </div>
+                <div class="month-table-data">
+                    <table class="table" id="table-month">
+                        <!-- Head of table -->
+                        
+                        <!-- body of table -->
+                    </table>
+                </div>
+            </main>
+        </section>
+        
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <footer class="footer-container">
+                <span>Created By HASSAN AHAROUI 2023. All rights reserved</span>
+            </footer>
+        </div>
+
+        <!-- JavaScript Section -->
+        <script type="module" src="./table.js"></script>
+        <script type="module" src="./month.js"></script>
+        <script type="module" src="./popup.js"></script>
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>

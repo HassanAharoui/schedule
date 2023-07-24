@@ -1,0 +1,25 @@
+.table {
+    width: 100vw;
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+} 
+
+.table th, td{
+    border-bottom: 2px solid black;
+    text-align: center;
+    height: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.table th:hover  {
+    background-color: aqua;
+    opacity: .4;
+}
+
+.table td:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}

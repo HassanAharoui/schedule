@@ -1,0 +1,123 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container , .list-items{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    background-color: crimson;
+    padding-top:1vh;
+    padding-bottom:1vh;
+}
+
+.list-items > li{
+    padding: 1vh 2vh;
+    margin-top:1vh;
+    margin-right: .5vh;
+    list-style: none;
+    border-radius: 10%;
+    font-size: large;
+    background-color: indianred;
+    cursor:pointer;
+}
+
+.list-items > li > a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.list-items > li:hover {
+    opacity: .3;
+}
+
+.list-items > li > a:hover {
+    color: lightblue;
+
+}
+
+.logo {
+    margin-left: 2vh;
+    padding: 1vh;
+    background-color: aqua;
+    font-size:30px;
+    
+}
+
+.footer-section  {
+    position: absolute;
+    bottom: 0%;
+    background-color: blue;
+    width: 100%;
+    padding: 1vh 0;
+} 
+
+.footer-container span {
+    margin-left:1vw;
+    color:#fff;
+}
+
+/* pop-up styles  */
+
+
+.pop-up-container {
+    position: absolute;
+    width:30vw;
+    background-color: darkgray;
+    height:50vh;
+    top: 30%;
+    left: 50%;
+    z-index: 100000;
+    border-radius: 2vw;
+    display: none;
+}
+
+.pop-up-second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.pop-up-close-btn {
+    position: relative;
+    left: 90%;
+    font-size: larger;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.pop-up-label-container {
+    margin-bottom: 2vh;
+    /* background-color: aqua; */
+}
+
+.pop-up-input-container , .pop-up-register-btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.pop-up-input-container input  {
+    width: 90%;
+    height: 3vh;
+    border-radius: 1vh;
+    border: none;
+    padding-left: 1vh;
+    margin-bottom: 2vh;
+}
+
+.pop-up-btn {
+    width: 50%;
+    height: 5vh;
+    background-color: darkorange;
+    /* border: .4px solid black; */
+    box-shadow: 2px 2px 2px black;
+}
