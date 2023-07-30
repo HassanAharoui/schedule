@@ -1,4 +1,5 @@
 import createDaysOfMonth from "./month.js";
+import database from './database.js';
 
 const popupContainer = document.getElementById('pop-up-container');
 const closeBtn = document.getElementById('pop-up-close-btn');
@@ -32,7 +33,11 @@ registerBtn.addEventListener('click',() => {
              console.log(true)
              listDaysOfMonth[i][1].push(activityValue.value)
              console.log(listDaysOfMonth)
-
+            //  console.log(listDaysOfMonth[i][0].getFullYear())
+             if(!database.hasDate(listDaysOfMonth[i][0].getFullYear())) {
+                // database.addToDB()
+             }
+            
             
         }
      }

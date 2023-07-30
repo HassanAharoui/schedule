@@ -1,9 +1,11 @@
 import createDaysOfMonth  from "./month.js";
 import {getWeekData} from './month.js';
+import database from './database.js'; // import all the module
 
 
 function displayDays(daysOfMonth , container) {
     // const tableContainer = document.getElementById('table-month');
+    console.log(daysOfMonth)
     let weekRow = [] ;
     let tableRow = "";
     let tableData = "";
@@ -45,7 +47,10 @@ function setDateValue(date) {
 }
 
 const listDaysOfMonth = createDaysOfMonth();
-// console.log(listDaysOfMonth)
+
+// database.generate_dataBase(listDaysOfMonth)
+
+
 if(window.location.pathname == '/') {
     displayDays(listDaysOfMonth,document.getElementById('table-month'));
 } else if(window.location.pathname == '/week.html') {
